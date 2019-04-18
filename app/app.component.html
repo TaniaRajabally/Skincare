@@ -1,0 +1,92 @@
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+<!-- Load an icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<nav  class="navbar navbar-expand-lg navbar-light bg-light">
+    <a  class="navbar-brand"  href="#">Angular CRM</a>
+    <button  class="navbar-toggler"  type="button"  data-toggle="collapse"  data-target="#navbarSupportedContent"  aria-controls="navbarSupportedContent"  aria-expanded="false"  aria-label="Toggle navigation">
+    <span  class="navbar-toggler-icon"></span>
+    </button>
+<div  class="collapse navbar-collapse"  id="navbarSupportedContent">
+    <ul  class="navbar-nav mr-auto navbar-right">
+    <li class="nav-item active">
+      <a class=" nav-link " href="#" routerLink='home' routerLinkActive='active'><i class="fa fa-fw fa-home"></i> Home<span  class="sr-only">(current)</span></a> 
+    </li>
+    <li class="nav-item active">
+        <a class=" nav-link " href="#"  routerLink='/features' routerLinkActive='active'><i class="fa fa-location-arrow" aria-hidden="true"></i> Features </a> 
+      </li>
+    <!-- <li class="nav-item active">
+      <a class=" nav-link " href="#"  routerLink='home' routerLinkActive='active'><i class="fa fa-location-arrow" aria-hidden="true"></i> About </a> 
+    </li> -->
+      <li class="nav-item active">
+          <a class=" nav-link " href="http://9f2b3e3a.ngrok.io/" ><i class="fa fa-location-arrow" aria-hidden="true"></i> Data Visualization </a> 
+        </li>
+    <li class="nav-item active">
+      <a class=" nav-link " href="#" routerLink='/login' routerLinkActive='active'><i class="fa fa-fw fa-home"></i> Login </a> 
+    </li>
+    <li class="nav-item active">
+      <a class=" nav-link " href="#"  routerLink='/signup' routerLinkActive='active'><i class="fa fa-location-arrow" aria-hidden="true"></i> Register </a> 
+    </li>
+</ul>
+</div>
+</nav>
+<div  class="container-fluid">
+  <router-outlet></router-outlet>
+</div>
+
+
+
+<!--
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav justify-content-left">
+    <li class="nav-item active">
+      <a class=" nav-link " href="#" routerLink='home' routerLinkActive='active'><i class="fa fa-fw fa-home"></i> Home</a> 
+    </li>
+    <li class="nav-item active">
+      <a class=" nav-link " href="#"  routerLink='upload' routerLinkActive='active'><i class="fa fa-location-arrow" aria-hidden="true"></i> About </a> 
+    </li>
+    <li class="nav-item active">
+      <a class=" nav-link " href="#" routerLink='news' routerLinkActive='active'><i class="fa fa-cogs " aria-hidden="true"></i>News</a> 
+    </li>
+    <li class="nav-item active">
+      <a class=" nav-link " href="#" routerLink='measures' routerLinkActive='active'> <i class="fa fa-code" aria-hidden="true"></i> Safety Measures</a> 
+    </li>
+    <li class="nav-item active">
+      <a class=" nav-link " href="#" routerLink='training' routerLinkActive='active'><i class="fa fa-globe" aria-hidden="true"></i> Trainings </a> 
+    </li>
+    <li class="nav-item active">
+        <a class=" nav-link " href="#" routerLink='vol' routerLinkActive='active'><i class="fa fa-globe" aria-hidden="true"></i> Volunteers </a> 
+      </li>
+      <li class="nav-item active">
+        <a class=" nav-link " href="#"  routerLink='/chat' routerLinkActive='active'><i class="fa fa-location-arrow" aria-hidden="true"></i> Chat </a> 
+      </li>
+      <li class="nav-item active">
+          <a class=" nav-link " href="#" ><i class="fa fa-location-arrow" aria-hidden="true"></i> Data Visualization </a> 
+        </li>
+    <li class="nav-item active">
+      <a class=" nav-link " href="#" routerLink='/login' routerLinkActive='active'><i class="fa fa-fw fa-home"></i> Login </a> 
+    </li>
+    <li class="nav-item active">
+      <a class=" nav-link " href="#"  routerLink='/signup' routerLinkActive='active'><i class="fa fa-location-arrow" aria-hidden="true"></i> Register </a> 
+    </li>
+    
+  </ul>
+</nav>
+<router-outlet></router-outlet>
+
+-->
+
+
+

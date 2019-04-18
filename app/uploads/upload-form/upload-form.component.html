@@ -1,0 +1,50 @@
+<router-outlet></router-outlet>
+<button style="float:right" routerLink="/home" routerLinkActive="active">Logout</button>
+<br>
+<div>
+   <button routerLink='/details' routerLinkActive='active'>Details</button>
+</div><div *ngIf="currentUpload">
+  
+</div>
+
+    <label>
+       <input type="file" (change)="detectFiles($event)">
+    </label>
+
+    <button
+            [disabled]="!selectedFiles"
+            (click)="uploadSingle()">
+
+      Upload Single
+    </button>
+ 
+      <button><a href="  http://0a6f50c2.ngrok.io/static/predict.html">Predict</a></button>
+   
+
+    <!-- <label>
+       <input type="file" (change)="detectFiles($event)" multiple>
+    </label>
+
+      <button
+              [disabled]="!selectedFiles"
+              (click)="uploadMulti()">
+
+        Upload Multiple
+      </button> -->
+     <!-- <div *ngFor= "let data of cdataArray">
+        <img src= {{data}} height = 100px width =100px >
+     </div> -->       
+      <div class="jumbotron">  
+
+     <div class="row">
+   
+ <div *ngFor= "let data of cdataArray">
+    <div class="col-sm-6">
+         <img src= {{data}} style="align-items: center" height= 200px width = 200px >
+          <br><br>
+    
+        </div>
+      </div>
+            </div>
+   
+</div>

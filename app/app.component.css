@@ -1,0 +1,31 @@
+.navbar-nav > li{
+    padding-left:10px;
+    padding-right:10px;
+  }
+
+  li a:hover:not(.active) {
+    background-color:#ff99cc;
+  }
+
+  .split {
+    height: 60%;
+    width: 100%;
+    background-image: "tp\src\assets\logo2.jpg";
+    position: fixed;
+    z-index: 1;
+    top: 7;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .aa {
+    font-family:"Comic Sans MS";
+    font-size: 17px;
+   } 
+
+
+   .grad {
+    height: 600px;
+    background-color:#660066;
+    background-image: linear-gradient(to bottom right, #660066, #ff99cc);
+    }

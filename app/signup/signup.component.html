@@ -1,0 +1,44 @@
+<div class="container-fluid row center-content">
+  <div class="col-4"></div>
+  <div class="col-4">
+      <h3 class="card-text" style="padding-top:5px;Font-size:20px;margin-left: 20px;text-decoration: underline"></h3><br><br>
+      <h3 class="text-center"> SIGN UP </h3>
+      <br>
+      <form [formGroup]="SignupForm" class="form-custom center-content text-center" >
+          <div class="form-group">
+
+              <div class="form-label-group ">
+                  <input type="email" id="email" formControlName="email" class="form-control" placeholder="Personal Email" required autofocus>
+                  <label for="email">Email address</label>
+              </div>
+
+              <div class="form-label-group">
+                  <input type="password" id="password" formControlName="password" class="form-control" placeholder="Password" required>
+                  <label for="password">Password</label>
+
+              </div>
+
+              <div class="form-label-group">
+                  <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Password" required>
+                  <label for="inputConfirmPassword">Confirm password</label>
+              </div>
+
+
+              <label class="error">{{errorMessage}}</label>
+              <h1 class="success">{{successMessage}}</h1>
+
+              <button type="submit" (click)="trySignup(SignupForm.value)" class="btn btn-info form-control col">Get Started!</button>
+              <hr class="my-4" >
+
+              <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Sign in with Google</button>
+
+          </div>
+      </form>
+  </div>
+  <div class="col-4"></div>
+</div>
+
+
+
+
+

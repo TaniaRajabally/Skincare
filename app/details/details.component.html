@@ -1,0 +1,55 @@
+<router-outlet></router-outlet>
+<button style="float:right" routerLink="/home" routerLinkActive="active">Logout</button>
+<br>
+<!-- <div id="mySidebar" class="sidebar">
+    <br>
+    <br>
+    <br>
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">×</a>
+    <a >Profile</a>
+    <a >Donors</a>
+    <a >Companies</a>
+    <a></a>
+</div> -->
+
+<!-- <div id="main">
+    <button class="openbtn" (click)="openNav()">☰</button>
+
+</div> -->
+
+
+<!-- Page Content -->
+<div class="container">
+
+
+    <!-- Page Features -->
+
+    <!-- Team -->
+    <section id="team" class="pb-5" >
+
+        <div class="container">
+            <router-outlet class="center-content"></router-outlet>
+            <h5 class="section-title h1">Profile</h5>
+            
+
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4"  #userProfileBlock>
+                                        <p >Name:{{name}}</p>
+                                        <p >E-mail: {{this.email}}</p>
+                                        <p >Contact No: {{this.contactno}}</p>
+                                        <p >Address: {{this.address}}</p>
+                                        <p >Date Of Birth: {{this.dob}}</p>
+                                        <p >Gender: {{this.gender}}</p>
+                                        <p >Description:<br>{{this.desc}}</p>
+                                        <!--<p class="card-text">POC number: {{donor.PocNo}}</p>-->
+             
+            </div>
+
+            <!--<a href="#" class="btn btn-primary btn-sm" routerLink="childDonor" routerLinkActive="active" ><i class="fa fa-plus" >Public Request</i></a>-->
+
+        </div>
+    </section>
+    <!-- Team -->
+</div>
+
+

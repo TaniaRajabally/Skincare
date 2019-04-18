@@ -1,0 +1,78 @@
+<div class="jumbotron" >
+  <div class="mat-bottom-sheet-container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <br>
+        <h3 style="color: #cc5200"><strong>Registration Details</strong></h3>
+        <form id="f" name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm">
+          <div class="form-group">
+            <label for="name">Member Name</label>
+            <input type="text" class="form-control" placeholder="Enter Member Name" name="name" [(ngModel)]="model.name" #name="ngModel" [ngClass]="{ 'is-invalid': f.submitted && name.invalid }" required />
+            <div *ngIf="f.submitted && name.invalid" class="invalid-feedback">
+              <div *ngIf="name.errors.required">Member Name is required</div>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" placeholder="Enter Email ID" name="email" [(ngModel)]="model.email" #email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email />
+            <div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
+              <div *ngIf="email.errors.required">Email is required</div>
+              <div *ngIf="email.errors.email">Email must be a valid email address</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Contact">ContactNo</label>
+            <input type="text" class="form-control" placeholder="Enter Contact Number"  name="Contact" [(ngModel)]="model.Contact" #Contact="ngModel" [ngClass]="{ 'is-invalid': f.submitted && Contact.invalid }" required minlength="10" />
+            <div *ngIf="f.submitted && Contact.invalid" class="invalid-feedback">
+              <div *ngIf="Contact.errors.required">Contact is required</div>
+              <div *ngIf="Contact.errors.minlength">Contact must be 10 numbers long</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" class="form-control" placeholder="Enter Address" name="address" [(ngModel)]="model.address" #address="ngModel" [ngClass]="{ 'is-invalid': f.submitted && address.invalid }" required address />
+            <div *ngIf="f.submitted && address.invalid" class="invalid-feedback">
+              <div *ngIf="address.errors.required">Address is required</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="gender">Gender</label>
+            <input type="text" class="form-control" placeholder="Enter Gender" name="gender" [(ngModel)]="model.gender" #gender="ngModel" [ngClass]="{ 'is-invalid': f.submitted && gender.invalid }" required gender />
+            <div *ngIf="f.submitted && gender.invalid" class="invalid-feedback">
+              <div *ngIf="gender.errors.required">Gender is required</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="text" class="form-control" placeholder="Enter Date of Birth" name="dob" [(ngModel)]="model.dob" #dob="ngModel" [ngClass]="{ 'is-invalid': f.submitted && dob.invalid }" required dob />
+            <div *ngIf="f.submitted && gender.invalid" class="invalid-feedback">
+              <div *ngIf="dob.errors.required">Date of Birth is required</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="desc">Describe yourself</label>
+            <input type="text" class="form-control" placeholder="Please describe yourself" name="desc" [(ngModel)]="model.desc" #desc="ngModel" [ngClass]="{ 'is-invalid': f.submitted && desc.invalid }" required desc />
+            <div *ngIf="f.submitted && desc.invalid" class="invalid-feedback">
+              <div *ngIf="desc.errors.required">Description is required</div>
+            </div>
+          </div>
+          
+         
+          <!--<div class="form-group login-group-checkbox">-->
+          <!--<label for="reg_gender" >Gender</label> <br>-->
+          <!--<input type="radio" class="" name="reg_gender" id="male" placeholder="username">-->
+          <!--<label for="male">Male</label>-->
+          <!--<br>-->
+          <!--<input type="radio" class="" name="reg_gender" id="female" placeholder="username">-->
+          <!--<label for="female">Female</label>-->
+          <!--</div>-->
+          <div class="form-group">
+              <button  class="btn" routerLink="/login" routerLinkActive="active" >Register</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
